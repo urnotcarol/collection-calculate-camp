@@ -2,7 +2,7 @@
 
 var get_letter_interval = require('../../practices/collectionOperator/get_letter_interval_2.js');
 
-describe('get_letter_interval', function () {
+ddescribe('get_letter_interval', function () {
 
   var collection_a = ['t', 'u', 'v', 'w', 'x',
     'y', 'z', 'aa', 'ab', 'ac', 'ad', 'ae', 'af', 'ag',
@@ -20,6 +20,12 @@ describe('get_letter_interval', function () {
 
     var result = get_letter_interval(20, 53);
     expect(result).toEqual(collection_a);
+  });
+
+  it('根据给出的两个数字得到对应自增的字母区间', function() {
+
+    var result = get_letter_interval(4650, 4651);
+    expect(result).toEqual(['aaa', 'aab']);
   });
 
   it('根据给出的两个数字得到对应自减的字母区间', function() {

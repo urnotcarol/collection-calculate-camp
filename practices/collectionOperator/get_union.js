@@ -1,8 +1,8 @@
 'use strict';
 
 function get_union(collection_a, collection_b) {
-  //在这里写入代码
+  collection_a.push(...(collection_b.filter(elem => !collection_a.includes(elem))));
+  return collection_a;
 }
 
 module.exports = get_union;
-
